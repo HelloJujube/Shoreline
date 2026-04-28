@@ -1,0 +1,12 @@
+Place your research images here, named:
+  01.jpg  — Chapter 1: The Geometry of Salt
+  02.jpg  — Chapter 2: A Century of Labour / The Body as Instrument
+  03.jpg  — Chapter 3: Infrastructure as Monument
+  04.jpg  — Chapter 4: Ecology by Accident / Heritage and the Non-Human
+  05.jpg  — Chapter 5: Adaptive Re-use and its Contradictions / The Visitor and the Worker
+  06.jpg  — Chapter 6: Futures in Suspension / Shore as Proposition
+
+Place your video as:
+  video.mp4  (in the root /my-website/ folder, not in /images/)
+
+Images can be JPG, PNG, or WebP — just update the src attributes in index.html if you use a different format.
