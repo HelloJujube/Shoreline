@@ -9,22 +9,14 @@
 <body>
 
   <!-- ═══════════════════════════════════════════
-       HERO — full-screen video landing
+       HERO — full-screen video
   ═══════════════════════════════════════════ -->
   <section id="hero">
     <div class="video-wrap">
       <video id="hero-video" autoplay muted loop playsinline>
-        <source src="video.mp4" type="video/mp4" />
+        <source src="Media/LANDINGVIDEOHeritageAsInfrastructure_Jui.mp4" type="video/mp4" />
       </video>
       <div class="video-overlay"></div>
-    </div>
-
-    <div class="hero-content">
-      <p class="hero-place">Saline Conti Vecchi</p>
-      <h1 class="hero-title">
-        Dialectic<br />of the Shore
-      </h1>
-      <p class="hero-sub">Heritage as Infrastructure</p>
     </div>
 
     <button class="scroll-cue" aria-label="Scroll down">
@@ -38,182 +30,403 @@
   </section>
 
   <!-- ═══════════════════════════════════════════
-       INTRO — short contextual paragraph
+       INTRO
   ═══════════════════════════════════════════ -->
   <section id="intro">
     <div class="intro-inner">
       <p class="intro-text">
-        On the south-western coast of Sardinia, the ancient salt pans of Conti Vecchi
-        have operated continuously for over a century — a landscape built by labour,
-        shaped by tide, and suspended between obsolescence and reinvention.
-        This research traces the site as a living dialectic: a heritage that is also
-        infrastructure, a ruin that is also a machine.
+        On the southwestern coast of Sardinia, the salt pans of Saline Conti Vecchi have
+        operated continuously for over a century. Over that time, the site has gathered
+        competing claims upon itself- ecological refuge, heritage monument, sustainability
+        showcase, active industrial supply chain. This research traces the site as a living
+        dialectic, where heritage monument and active extraction, ecological sanctuary and
+        mechanized harvest, are not successive eras but simultaneous infrastructures
+        operating on the same shore. In doing so, it interrogates how these overlapping
+        narratives are constructed, curated, and mobilized, asking not only what is preserved,
+        but how heritage itself is deployed as an infrastructural tool to organize value,
+        visibility, and meaning along the coast.
       </p>
     </div>
   </section>
 
   <!-- ═══════════════════════════════════════════
-       SCROLLYTELLING — sticky image / text steps
+       SCROLLYTELLING
   ═══════════════════════════════════════════ -->
   <section id="scrolly">
 
-    <!-- Chapter 1 -->
-    <div class="scrolly-chapter" data-chapter="1">
-      <div class="sticky-image">
-        <img src="images/01.jpg" alt="Aerial view of the salt pans at dawn" />
-        <span class="img-counter">01</span>
+    <!-- ══════════════════════════════════════
+         CHAPTER 1 — The Birth
+    ══════════════════════════════════════ -->
+    <div class="scrolly-chapter scrolly-chapter--grid" data-chapter="1">
+      <div class="sticky-grid">
+        <span class="img-label">The Birth of Saline Conti Vecchi</span>
+
+        <figure class="mini-img active" data-img-index="0">
+          <img src="Media/images/01Heritage/nature/ReclamationMapSantaGillaLagoon.png"
+               alt="Bonifica dello Stagno di S. Gilla — historical reclamation map of the Santa Gilla lagoon" />
+          <figcaption>Bonifica dello Stagno di S. Gilla, n.d.</figcaption>
+        </figure>
+
+        <figure class="mini-img" data-img-index="1">
+          <img src="Media/images/01Heritage/village/IMG_6810.png"
+               alt="Contemporary site map of Saline Conti Vecchi and surroundings" />
+          <figcaption>Saline Conti Vecchi e Dintorni. Photo: Author, 2026</figcaption>
+        </figure>
+
+        <figure class="mini-img" data-img-index="2">
+          <img src="Media/images/01Heritage/village/IMG_6892.png"
+               alt="Archival film projection showing brick construction of the village" />
+          <figcaption>Village construction documentation. Photo: Author, 2026</figcaption>
+        </figure>
+
+        <figure class="mini-img" data-img-index="3">
+          <img src="Media/images/01Heritage/village/IMG_6865.png"
+               alt="Original architectural drawings of worker housing types" />
+          <figcaption>Workers' housing types, original drawings. Photo: Author, 2026</figcaption>
+        </figure>
       </div>
+
       <div class="steps">
-        <div class="step" data-active="true">
-          <h3>The Geometry of Salt</h3>
+
+        <div class="step" data-img-index="0">
+          <h3>Luigi Conti Vecchi &amp; the Land Reclamation</h3>
           <p>
-            The pans read from above as pure geometry — rectangular basins subdivided
-            by earthen levees, their colours shifting from pale chalk to deep magenta
-            depending on salinity and the micro-organisms that inhabit each stage of
-            evaporation. The grid is not decorative; it is thermodynamic logic made
-            visible from the air.
+            In the early twentieth century, the marshlands south of Cagliari were considered
+            uninhabitable. They were waterlogged, infested with malaria-carrying mosquitos,
+            and economically marginal. Engineer Luigi Conti Vecchi saw something else: a coast
+            with the salinity, temperature, and wind conditions to support large-scale solar
+            salt production <span class="ref">(MedSea Foundation, 2020; Sardinia12, 2017.)</span>.
+            He proposed a project to drain the lagoon margins, modify the banks, and install a
+            circulating canal system to move brine through graduated evaporation stages.
+            Saltworks emerged as part of this broader territorial transformation, alongside
+            land reclamation efforts, the construction of hydraulic infrastructure, and the
+            building of an industrial village for all workers and their families. The once
+            malarial wetland was reconfigured into a productive landscape, one that synchronized
+            ecological processes with industrial dynamics. This making of an engineered
+            coastline became a place where environment, labor, and infrastructure were
+            interwoven to produce not only salt but a landscape whose production would later
+            be reinterpreted as heritage.
           </p>
         </div>
+
+        <div class="step" data-img-index="1">
+          <h3>A Territory Redesigned</h3>
+          <p>
+            The Santa Gilla lagoon was reorganised into a sequence of basins, levees, and
+            channels, covering approximately 1,700 hectares
+            <span class="ref">(IDESE Cultura, n.d.)</span>. A refinery line was planned to
+            connect directly to the Port of Cagliari. Within this engineering system, seawater
+            was guided through a calibrated network of evaporation ponds, moving from larger
+            and deeper basins into smaller crystallization pools, where salt would be harvested.
+            The entire saltworks functioned as a controlled gradient of salinity, shaped by sun,
+            wind, and the time of water circulation — a highly engineered terrain, where shifts
+            in elevation and flow could determine the production cycle. Besides the hydraulic
+            works, there were supporting infrastructures such as pumping stations, roads, and
+            storage buildings to facilitate the movement of materials and workers across the
+            site. Saline Conti Vecchi developed into a self-contained system, where industrial
+            processes, ecological conditions, and everyday life were interwoven.
+          </p>
+        </div>
+
+        <div class="step" data-img-index="2,3">
+          <h3>Building from Scratch</h3>
+          <p>
+            Everything at Conti Vecchi was made on site. Bricks were formed from clay mixed
+            with straw and dried in the sun; the workers' village at Macchiareddu was built
+            from reclaimed ground <span class="ref">(MedSea Foundation, 2020).</span>. Housing
+            for families, a school, a church, a pharmacy, a carpentry shop, and a chemical
+            laboratory were all constructed as part of a single corporate vision. The company
+            built a self-sufficient settlement because there was nothing else here
+            <span class="ref">(Sardinia12, 2017; Follett, 2016)</span>.
+          </p>
+        </div>
+
       </div>
     </div>
 
-    <!-- Chapter 2 -->
+    <!-- ══════════════════════════════════════
+         CHAPTER 2 — Life of the Saline Conti Vecchi
+    ══════════════════════════════════════ -->
     <div class="scrolly-chapter" data-chapter="2">
       <div class="sticky-image">
-        <img src="images/02.jpg" alt="Workers harvesting salt in mid-century photographs" />
-        <span class="img-counter">02</span>
+        <img src="Media/images/01Heritage/village/IMG_6833.png"
+             alt="Archival black and white photograph of workers harvesting salt at Saline Conti Vecchi" />
+        <span class="img-label">Life of the Saline</span>
+        <span class="photo-credit">Archival photograph, Ing. Luigi Conti Vecchi S.p.A.</span>
       </div>
       <div class="steps">
-        <div class="step">
-          <h3>A Century of Labour</h3>
+
+        <div class="step" data-image="Media/images/01Heritage/village/IMG_6833.png">
+          <h3>Life and Labor of the Saline</h3>
           <p>
-            Production at Conti Vecchi peaked in the mid-twentieth century, when
-            thousands of workers — many of them women — harvested salt by hand before
-            mechanisation arrived. Their seasonal rhythms, their vernacular shelters,
-            and their collective knowledge constitute a form of intangible heritage
-            that the built fabric can only partially index.
+            At its peak, around 300 permanent workers lived in the Macchiareddu Village.
+            During the harvest season between September to November, the number of workers
+            rose to approximately 1,500 <span class="ref">(MedSea Foundation, 2020).</span>.
+            The work was physical and seasonal: "sun workers" and "shadow workers" calibrated
+            their labour to the rhythms of evaporation
+            <span class="ref">(Neo s.r.l, 2017).</span>. What the archival photographs illustrate
+            is the body as instrument, with the rake held at a precise angle, the wheelbarrow
+            pushed along levee paths worn smooth by repetition across decades
+            <span class="ref">(MedSea Foundation,2020; Follett, 2016)</span>.
           </p>
         </div>
-        <div class="step">
-          <h3>The Body as Instrument</h3>
+
+        <div class="step" data-image="Media/images/01Heritage/village/IMG_6854.png">
+          <h3>The Village as Social World</h3>
           <p>
-            Archival photographs reveal the body calibrated to the landscape:
-            broad-brimmed hats against glare, bare feet on crystalline crust, the
-            rake held at a precise angle to avoid breaking the pan floor.
-            Knowledge lived in posture as much as in process.
+            The company offered wage salaries that were considered exceptional for the time
+            and extended the right to education to workers' children
+            <span class="ref">(MedSea Foundation, 2020).</span>. It built an infirmary, a
+            cafeteria, and recreational spaces, organizing the services around the rhythms of
+            the saltworks. Women were excluded from manual labor but directed toward vocational
+            training. The company designed the houses workers lived in, regulated their access
+            to services, and shaped how time was spent. This was paternalism embedded
+            throughout the landscape, clearly showing that production did not end at the
+            basin's edge but extended into the domestic sphere
+            <span class="ref">(Follett, 2016).</span>.
           </p>
         </div>
+
       </div>
     </div>
 
-    <!-- Chapter 3 -->
+    <!-- ══════════════════════════════════════
+         CHAPTER 3 — Manmade Wetland
+    ══════════════════════════════════════ -->e    
     <div class="scrolly-chapter" data-chapter="3">
       <div class="sticky-image">
-        <img src="images/03.jpg" alt="Industrial infrastructure — pumps and channels" />
-        <span class="img-counter">03</span>
+        <img src="Media/images/01Heritage/nature/SALINE-CONTI-VECCHI-53.jpg"
+             alt="Flamingos in flight over the Santa Gilla wetland, with salt mounds and industrial infrastructure behind" />
+        <span class="img-label">Man-made Wetland</span>
+        <span class="photo-credit">© Saline Conti Vecchi</span>
       </div>
       <div class="steps">
-        <div class="step">
-          <h3>Infrastructure as Monument</h3>
+
+        <div class="step" data-image="Media/images/01Heritage/nature/SALINE-CONTI-VECCHI-53.jpg">
+          <h3>Uninvited Residents</h3>
           <p>
-            The hydraulic system that feeds the pans — a network of pumps, sluices,
-            and graduated channels — is itself a monument to industrial modernity.
-            Designed in the 1920s by the Montecatini chemical company, it remains
-            largely intact, a palimpsest of engineering ambition now listed for
-            its cultural significance.
+            The flamingos were not planned for, as Saline Conti Vecchi was established in
+            the 1920s to produce salt, not to serve as a bird sanctuary. Greater flamingos
+            began colonizing the site in the 1990s and by the 2000s Saline Conti Vecchi had
+            become an important flamingo migration corridor in the Mediterranean, as one of
+            Sardinia's most significant wetland reserves
+            <span class="ref">(ENICBCMED, 2020; MedSea Foundation, 2020).</span>. The
+            infrastructure built to serve industrial salt production happened to replicate the
+            shallow-brine conditions flamingos need for feeding and nesting, especially during
+            the evaporation season <span class="ref">(ENICBCMED, 2020)</span>.
           </p>
         </div>
+
+        <div class="step" data-image="Media/images/01Heritage/nature/FlamingoCarlo-Pinna_2019.jpg">
+          <h3>Infrastructure as Habitat</h3>
+          <p>
+            The ecological value of the site depends on the continued operation of the
+            industrial system itself <span class="ref">(ENICBCMED,2020).</span>. The electric
+            pumps that move water through the basins to produce salt also regulate salinity
+            levels across the pans. When any of that process stops, the system unravels. Brine
+            shrimp populations decline and with them the birds that depend on this food chain
+            <span class="ref">(Klingerman, 2019)</span>. The thriving wetland is sustained
+            through constant intervention. In other words, the wetland is not separate from
+            the infrastructure; it is produced by it. Its biodiversity exists through the very
+            process of extraction.
+          </p>
+        </div>
+
       </div>
     </div>
 
-    <!-- Chapter 4 -->
+    <!-- ══════════════════════════════════════
+         CHAPTER 4 — Death of the Saline
+    ══════════════════════════════════════ -->
     <div class="scrolly-chapter" data-chapter="4">
       <div class="sticky-image">
-        <img src="images/04.jpg" alt="Flamingos in the lagoon margins" />
-        <span class="img-counter">04</span>
+        <img src="Media/images/01Heritage/village/IMG_6957.png"
+             alt="Crumbling village buildings behind a concrete wall covered in graffiti, trees growing unchecked" />
+        <span class="img-label">Death of the Saline</span>
+        <span class="photo-credit">Photo: </span>
       </div>
       <div class="steps">
-        <div class="step">
-          <h3>Ecology by Accident</h3>
+
+        <div class="step" data-image="Media/images/01Heritage/village/IMG_6957.png">
+          <h3>Decline, War, and Mismanagement</h3>
           <p>
-            What industry made, nature colonised. Flamingos arrived at Conti Vecchi
-            in the 1990s and now nest in numbers that make the site one of the most
-            significant wetland reserves on the island. The managed water levels
-            that serve salt production also happen to replicate the shallow-brine
-            habitat flamingos require.
+            The Second World War disrupted the salt pans materially and socially. Production
+            declined and parts of the infrastructure were damaged. There were partial
+            recoveries in the post-war years but the site never fully returned to the social
+            world of its original settlement
+            <span class="ref">(MedSea Foundation, 2020; Sardinia12, 2017.)</span>. There were
+            big shifts in ownership and management between hands, and with that investment
+            slowed. The company village declined as workers moved elsewhere for housing and
+            daily life <span class="ref">(MedSea Foundation,2020.; Sardinia12, 2017.)</span>.
+            The village thinned out and eventually slipped into disuse and disrepair
+            <span class="ref">(Follett, 2016)</span>.
           </p>
         </div>
-        <div class="step">
-          <h3>Heritage and the Non-Human</h3>
+
+        <div class="step" data-image="Media/images/01Heritage/village/IMG_6969.png">
+          <h3>The Empty Village</h3>
           <p>
-            Conservation frameworks typically centre the human: the artefact,
-            the memory, the community. Here the non-human presses back —
-            demanding that any future for the site account for migration patterns,
-            nesting calendars, and salinity tolerances alongside the claims of
-            cultural significance.
+            The transformation of Macchiareddu unfolded as workers moved elsewhere gradually,
+            leaving the houses and the village that had once thrived. The area around the
+            saline industrialized in a different logic as ENI, an energy giant with significant public stakes expanded
+            petrochemical operations across the Assemini-Macchiareddu corridor, reshaping the
+            surrounding area into an industrial zone. The original workers' settlement remained
+            in place without being repurposed or demolished
+            <span class="ref">(Unione Sarda, 2022)</span>. The village became obsolete,
+            abandoned by the logic that had created it.
           </p>
         </div>
+
       </div>
     </div>
 
-    <!-- Chapter 5 -->
+    <!-- ══════════════════════════════════════
+         CHAPTER 5 — Rebirth of the Saline
+    ══════════════════════════════════════ -->
     <div class="scrolly-chapter" data-chapter="5">
       <div class="sticky-image">
-        <img src="images/05.jpg" alt="Adaptive reuse — the visitor centre conversion" />
-        <span class="img-counter">05</span>
+        <img src="Media/images/01Heritage/village/lab.jpg"
+             alt="The restored chemical laboratory in the workers' village, with original wooden cabinetry and salt samples on the tiled workbench" />
+        <span class="img-label">Rebirth of the Saline</span>
+        <span class="photo-credit">Photo: Local Digital Projects / FAI</span>
       </div>
       <div class="steps">
-        <div class="step">
-          <h3>Adaptive Re-use and its Contradictions</h3>
+
+        <div class="step" data-image="Media/images/01Heritage/village/lab.jpg">
+          <h3>ENI Takes Ownership</h3>
           <p>
-            The former workers' village has been partially converted into a boutique
-            hotel and museum. The conversion is careful — original finishes preserved,
-            industrial artefacts recontextualised as display objects — yet it produces
-            a new friction: the heritage of labour repackaged for the leisure economy
-            that displaced it.
+            Beginning from the mid-twentieth century, Saline Conti Vecchi gradually got consolidated into ENI (Ente Nazionale
+            Idrocarburi), Italy's state-owned energy company, operating through its subsidiary
+            Ing. Luigi Conti Vecchi S.p.A. <span class="ref">(ENI Rewind, 2023.)</span>. ENI absorbed the chemical and salt
+            related operations and from this period onwards, the salt pans became effectively part of Eni's industrial network.
+            The company has sought to reposition itself as a leader in environemntal remediation and sustainability, framing projects 
+            like Conti Vecchi as proof of its green transition actions. Through its subsidiary Eni  Rewind, Conti Vecchi is presented 
+            as a model where industry, ecology, and heritage coexist. This narrative has been challenged as it sits alongside a 
+            different reality - while having increasingly visibl renewable initiatives, only a small share of Eni's overall portfolio 
+            is dedicated to renewable energy, while the majority of its operations and revenues are tied to fossil fuel extraction 
+            and processing. Saline Conti Vecchi with its flamingos and centenary history, is gramed as a story of harmony between 
+            industry and nature (ENI, 2024), is leveraged as a visible interface through which Eni performs sustainability. 
           </p>
         </div>
-        <div class="step">
-          <h3>The Visitor and the Worker</h3>
+
+        <div class="step" data-image="Media/images/01Heritage/village/lab.jpg">
+          <h3>ENI &amp; FAI Partnership</h3>
           <p>
-            Whose shore is this now? The dialectic the title names is not resolved
-            by renovation. It sharpens. Heritage becomes infrastructure for tourism
-            rather than production, and the question of who benefits — and who is
-            narrated into the past — remains open.
+            In 2016, Eni formalized a strategic partnership with Fondo Ambiente Italiano (FAI),
+            Italy's national heritage trust
+            <span class="ref">(Dire.it, 2017; Serendipsite, 2022)</span>. Through this
+            collaboration, FAI restored key buildings — the foundry, the management offices,
+            the chemical laboratory, and the director's residence — while opening the site to
+            guided tours and framing it as "a unique cultural-preservative experience,
+            combining industrial activity with the historical and naturalistic value of an
+            operational site" <span class="ref">(Nocilla, 2025)</span>. Notably, Saline Conti
+            Vecchi is one of only two privately owned sites that FAI manages, marking a
+            departure from its usual portfolio of public or donated heritage assets. Heritage,
+            in this context, becomes the primary interface through which Eni presents its
+            presence to the public. This partnership, however, has not been without
+            controversy. Critics have questioned the alignment between a national heritage
+            institution and a major energy company whose core operations are largely tied to
+            fossil fuel production, raising concerns about corporate image-making. At Conti
+            Vecchi, restoration and narrative curation unfold alongside ongoing industrial
+            activity, blurring the boundaries between preservation, promotion, and branding.
+            If both Eni and FAI operate within structures closely tied to the Italian state —
+            one as a state-controlled energy company, the other as a nationally endorsed
+            cultural institution — then what does their collaboration reveal about how heritage
+            is mobilized, and whose interests it ultimately serves?
           </p>
         </div>
+
+        <div class="step" data-image="Media/images/02Industry/saline-conti-vecchi.jpg">
+          <h3>Leveraging the Green Image</h3>
+          <p>
+            In particular, the ENI–FAI partnership has drawn sustained criticism as a form of
+            greenwashing. Italian citizens and organizations have formally sued ENI for human
+            rights violations and climate change impacts
+            <span class="ref">(Greenpeace, 2023)</span>. Italy's Supreme Court confirmed
+            jurisdiction in a landmark climate lawsuit against the company
+            <span class="ref">(Andrich et al., 2025)</span> and ENI has been accused of
+            marketing fossil fuels as clean energy while continuing to expand extraction
+            <span class="ref">(Igini, 2023; Niranjan, 2025)</span>. An independent assessment
+            of ENI's climate strategy found its commitments materially insufficient
+            <span class="ref">(Reclaim Finance, 2025)</span>. Heritage and flamingos did not
+            reduce ENI's industrial footprint at Conti Vecchi; they simply reframed it.
+          </p>
+        </div>
+
+        <div class="step" data-image="Media/images/02Industry/Bulldozer.png">
+          <h3>Sold to Italkali — The 2022 Divestment</h3>
+          <p>
+            In 2022, ENI sold the industrial salt operation to Italkali (Società Italiana
+            Sali Alcalini SpA), Italy's leading national rock salt producer and owner of the
+            Sale di Sicilia brand
+            <span class="ref">(Italkali, 2025.; Unione Sarda, 2022.)</span>. Italkali's
+            production model relies on mechanical scrapers, diesel truck fleets, and vacuum
+            pan processes using centrifuges and industrial dryers. At current, Italkali
+            produces 400,000 tonnes per year at Conti Vecchi
+            <span class="ref">(Italkali, 2025.)</span>. While the FAI heritage partnership
+            remained with ENI, the industrial infrastructure passed to new hands.
+          </p>
+        </div>
+
       </div>
     </div>
 
-    <!-- Chapter 6 -->
+    <!-- ══════════════════════════════════════
+         CHAPTER 6 — Preservation
+    ══════════════════════════════════════ -->
     <div class="scrolly-chapter" data-chapter="6">
       <div class="sticky-image">
-        <img src="images/06.jpg" alt="Horizon line — salt, water, sky" />
-        <span class="img-counter">06</span>
+        <img src="Media/images/01Heritage/village/foundry.png"
+             alt="Visitors seated in the foundry space labelled 'Alle Saline', watching a projection surrounded by preserved industrial machinery" />
+        <span class="img-label">Preservation</span>
+        <span class="photo-credit">Photo: Author, 2026</span>
       </div>
       <div class="steps">
-        <div class="step">
-          <h3>Futures in Suspension</h3>
+
+        <div class="step" data-image="Media/images/01Heritage/village/foundry.png">
+          <h3>What Is Being Preserved?</h3>
           <p>
-            Climate projections threaten both. Rising sea levels may flood the
-            lowest pans within decades; summer heat is already altering evaporation
-            rates. The infrastructure built to manage water must now adapt to water
-            it was never designed to handle. Heritage and urgency converge on the
-            same levee.
+            The FAI restoration preserves the management building, the chemical laboratory,
+            the carpentry shop, and the director's office, rooms with their original furniture
+            dating back to the founding era
+            <span class="ref">(Serendipsite, 2022; Nocilla, 2025).</span>. The museum
+            route connects these spaces and passes through the workers' housing that have become
+            abandoned and dilapidated. Visitors can tour the salt pans by decorative train.
+            Fleur de sel, "cultivated" by hand under specific wind conditions, is sold in the
+            gift shop <span class="ref">(Sardegna Turismo,2020)</span>. The bulldozers working
+            the main harvest basins are not part of the tour.
           </p>
         </div>
-        <div class="step">
-          <h3>Shore as Proposition</h3>
+
+        <div class="step" data-image="Media/images/01Heritage/nature/Epicshot.png">
+          <h3>Whose Narratives Get to Be Preserved?</h3>
           <p>
-            To study Conti Vecchi is to study the shore as a condition rather than
-            a boundary — a zone of negotiation between states, between epochs,
-            between the interests of capital, culture, ecology, and community.
-            The dialectic does not resolve. It continues.
+            In the museum trail, it is the story of Luigi Conti Vecchi (the engineer, the
+            founder, the corporate vision) that structures the visitor experience
+            <span class="ref">(Sardegna Turismo, 2020)</span>. The
+            salt workers who ran the pans for generations, who raised families in those houses,
+            whose seasonal knowledge kept the harvest running, are present as backdrop. Their
+            specific histories, their collective life, their embodied expertise: these are
+            framed as atmosphere rather than as heritage in their own right
+            <span class="ref">(Neo s.r.l, 2017)</span>. The question of whose narrative the site
+            preserves is also a question of whose absence it quietly erases.
           </p>
         </div>
+
       </div>
     </div>
 
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CLOSING TITLE
+  ═══════════════════════════════════════════ -->
+  <section id="closing">
+    <div class="closing-inner">
+      <p class="closing-place">Saline Conti Vecchi, Sardinia</p>
+      <h1 class="closing-title">Dialectic<br />of the Shore</h1>
+      <p class="closing-sub">Heritage as Infrastructure</p>
+    </div>
   </section>
 
   <!-- ═══════════════════════════════════════════
@@ -221,11 +434,24 @@
   ═══════════════════════════════════════════ -->
   <footer id="footer">
     <div class="footer-inner">
-      <p class="footer-project">Dialectic of the Shore</p>
-      <p class="footer-sub">Heritage as Infrastructure — Saline Conti Vecchi</p>
-      <p class="footer-year">2026</p>
+      <p class="footer-title">GSAPP Design Clinic: Erasing the Shoreline</p>
+      <p class="footer-sub">Spring 2026</p>
+      <p class="footer-designer"> Research Project By Jui Shih, MSUP</p>
     </div>
   </footer>
+
+  <button class="sound-toggle" id="sound-toggle" aria-label="Toggle sound">
+    <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <path d="M11 5L6 9H2v6h4l5 4V5z"/>
+      <line x1="23" y1="9" x2="17" y2="15"/>
+      <line x1="17" y1="9" x2="23" y2="15"/>
+    </svg>
+    <svg class="icon-sound" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="display:none">
+      <path d="M11 5L6 9H2v6h4l5 4V5z"/>
+      <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+      <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+    </svg>
+  </button>
 
   <script src="script.js"></script>
 </body>
