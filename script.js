@@ -20,7 +20,7 @@ document.querySelectorAll('.intro-text').forEach(el => introObserver.observe(el)
 // ── Per-step image switching ─────────────────
 // Each .step can carry data-image="path"; when it enters view,
 // the sticky image in the same chapter fades to that image.
-function swapImage(chapter, newSrc) {
+function swapImage(chapter, newSrc, newCredit) {
   const img = chapter.querySelector('.sticky-image img');
   if (!img || img.dataset.current === newSrc) return;
   img.dataset.current = newSrc;
@@ -29,6 +29,10 @@ function swapImage(chapter, newSrc) {
     img.src = newSrc;
     img.style.opacity = '1';
   }, 250);
+  if (newCredit !== undefined) {
+    const credit = chapter.querySelector('.photo-credit');
+    if (credit) credit.textContent = newCredit;
+  }
 }
 
 const stepObserver = new IntersectionObserver(
@@ -50,7 +54,7 @@ const stepObserver = new IntersectionObserver(
         } else {
           // Single sticky image: swap src
           const imgSrc = entry.target.dataset.image;
-          if (imgSrc) swapImage(chapter, imgSrc);
+          if (imgSrc) swapImage(chapter, imgSrc, entry.target.dataset.credit);
         }
       }
     });
