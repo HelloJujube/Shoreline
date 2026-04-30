@@ -80,11 +80,12 @@ const stepObserver = new IntersectionObserver(
             if (target) target.classList.add('active');
           });
         } else {
-          const duo = chapter.querySelector('.sticky-duo');
+          chapter.querySelectorAll('.sticky-duo').forEach(d => d.classList.remove('active'));
           if (entry.target.dataset.layout === 'duo') {
+            const duoId = entry.target.dataset.duo;
+            const duo = chapter.querySelector(`.sticky-duo[data-duo="${duoId}"]`);
             if (duo) duo.classList.add('active');
           } else {
-            if (duo) duo.classList.remove('active');
             const imgSrc = entry.target.dataset.image;
             if (imgSrc) swapImage(chapter, imgSrc, entry.target.dataset.credit);
           }
