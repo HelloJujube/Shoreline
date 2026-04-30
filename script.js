@@ -80,9 +80,14 @@ const stepObserver = new IntersectionObserver(
             if (target) target.classList.add('active');
           });
         } else {
-          // Single sticky image: swap src
-          const imgSrc = entry.target.dataset.image;
-          if (imgSrc) swapImage(chapter, imgSrc, entry.target.dataset.credit);
+          const duo = chapter.querySelector('.sticky-duo');
+          if (entry.target.dataset.layout === 'duo') {
+            if (duo) duo.classList.add('active');
+          } else {
+            if (duo) duo.classList.remove('active');
+            const imgSrc = entry.target.dataset.image;
+            if (imgSrc) swapImage(chapter, imgSrc, entry.target.dataset.credit);
+          }
         }
       }
     });

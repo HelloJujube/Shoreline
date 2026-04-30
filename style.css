@@ -283,6 +283,42 @@ img {
   max-width: 52ch;
 }
 
+/* ── Two-image duo panel ── */
+.sticky-duo {
+  display: none;
+  position: absolute;
+  inset: 0;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.35rem;
+  background: var(--dark);
+}
+
+.sticky-duo.active {
+  display: grid;
+}
+
+.duo-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.duo-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.duo-img figcaption {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.75rem;
+  font-family: var(--sans);
+  font-size: 0.48rem;
+  letter-spacing: 0.08em;
+  color: rgba(0, 0, 0, 0.7);
+}
+
 /* ═══════════════════════════════════════════
    CLOSING TITLE
 ═══════════════════════════════════════════ */
