@@ -480,8 +480,10 @@ img {
 }
 
 .footer-title {
-  font-size: clamp(1rem, 2.5vw, 1.4rem);
-  color: var(--salt);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  color: var(--muted);
   font-weight: 400;
 }
 
@@ -494,8 +496,8 @@ img {
 
 .footer-designer {
   font-family: var(--sans);
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  letter-spacing: 0.05em;
   color: var(--sand);
   margin-top: 0.8rem;
 }
