@@ -47,7 +47,7 @@ function adaptCreditColor(src, creditEl) {
   probe.src = src;
 }
 
-function swapImage(chapter, newSrc, newCredit) {
+function swapImage(chapter, newSrc, newCredit, forceDark) {
   const img = chapter.querySelector('.sticky-image img');
   if (!img || img.dataset.current === newSrc) return;
   img.dataset.current = newSrc;
@@ -59,7 +59,11 @@ function swapImage(chapter, newSrc, newCredit) {
   const credit = chapter.querySelector('.photo-credit');
   if (credit) {
     if (newCredit !== undefined) credit.textContent = newCredit;
-    adaptCreditColor(newSrc, credit);
+    if (forceDark) {
+      credit.style.color = 'rgba(0, 0, 0, 0.65)';
+    } else {
+      adaptCreditColor(newSrc, credit);
+    }
   }
 }
 
@@ -87,7 +91,7 @@ const stepObserver = new IntersectionObserver(
             if (duo) duo.classList.add('active');
           } else {
             const imgSrc = entry.target.dataset.image;
-            if (imgSrc) swapImage(chapter, imgSrc, entry.target.dataset.credit);
+            if (imgSrc) swapImage(chapter, imgSrc, entry.target.dataset.credit, entry.target.dataset.creditDark);
           }
         }
       }
