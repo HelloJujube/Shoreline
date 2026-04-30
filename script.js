@@ -20,6 +20,33 @@ document.querySelectorAll('.intro-text').forEach(el => introObserver.observe(el)
 // ── Per-step image switching ─────────────────
 // Each .step can carry data-image="path"; when it enters view,
 // the sticky image in the same chapter fades to that image.
+
+function adaptCreditColor(src, creditEl) {
+  const probe = new Image();
+  probe.crossOrigin = 'anonymous';
+  probe.onload = function () {
+    const canvas = document.createElement('canvas');
+    const w = 80, h = 60;
+    canvas.width = w; canvas.height = h;
+    const ctx = canvas.getContext('2d');
+    // sample the bottom-right 40% of the image where the credit sits
+    ctx.drawImage(probe,
+      probe.naturalWidth * 0.6, probe.naturalHeight * 0.6,
+      probe.naturalWidth * 0.4, probe.naturalHeight * 0.4,
+      0, 0, w, h);
+    const data = ctx.getImageData(0, 0, w, h).data;
+    let total = 0;
+    for (let i = 0; i < data.length; i += 4) {
+      total += 0.299 * data[i] + 0.587 * data[i + 1] + 0.114 * data[i + 2];
+    }
+    const avg = total / (data.length / 4);
+    creditEl.style.color = avg > 140
+      ? 'rgba(0, 0, 0, 0.65)'
+      : 'rgba(232, 224, 208, 0.5)';
+  };
+  probe.src = src;
+}
+
 function swapImage(chapter, newSrc, newCredit) {
   const img = chapter.querySelector('.sticky-image img');
   if (!img || img.dataset.current === newSrc) return;
@@ -29,9 +56,10 @@ function swapImage(chapter, newSrc, newCredit) {
     img.src = newSrc;
     img.style.opacity = '1';
   }, 250);
-  if (newCredit !== undefined) {
-    const credit = chapter.querySelector('.photo-credit');
-    if (credit) credit.textContent = newCredit;
+  const credit = chapter.querySelector('.photo-credit');
+  if (credit) {
+    if (newCredit !== undefined) credit.textContent = newCredit;
+    adaptCreditColor(newSrc, credit);
   }
 }
 
@@ -132,5 +160,11 @@ window.addEventListener('load', () => {
     if (rect.top < window.innerHeight * 0.85) {
       step.classList.add('active');
     }
+  });
+  // Set initial caption color for each chapter's starting image
+  document.querySelectorAll('.scrolly-chapter:not(.scrolly-chapter--grid)').forEach(ch => {
+    const img = ch.querySelector('.sticky-image img');
+    const credit = ch.querySelector('.photo-credit');
+    if (img && credit && img.src) adaptCreditColor(img.src, credit);
   });
 });
