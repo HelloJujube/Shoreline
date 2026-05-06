@@ -319,6 +319,13 @@ img {
   color: rgba(0, 0, 0, 0.7);
 }
 
+/* Ramsar maps: show full image without cropping */
+.sticky-duo--contain .duo-img img {
+  object-fit: contain;
+  object-position: center;
+  background: #fff;
+}
+
 /* ═══════════════════════════════════════════
    CLOSING TITLE
 ═══════════════════════════════════════════ */
