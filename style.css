@@ -283,6 +283,10 @@ img {
   max-width: 52ch;
 }
 
+.step p + p {
+  margin-top: 1.2em;
+}
+
 /* ── Two-image duo panel ── */
 .sticky-duo {
   display: none;
